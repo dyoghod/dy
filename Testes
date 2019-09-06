@@ -1,0 +1,71 @@
+public class PrincipalPiloto {
+	public static void main(String[] args) {
+		
+		Piloto pAzul = new Piloto();
+		pAzul.tampa = new Tampa();
+		pAzul.fabricante = new Fabricante();
+		pAzul.fabricante.endereco = new Endereco();
+		
+		pAzul.cor = "Azul";
+		pAzul.tamanhoPonta = 0.7;
+		pAzul.tipo = "Fino";
+		pAzul.tampa.formato = "Agudo";
+		pAzul.tampa.tamanhoTampa = "grande";
+		pAzul.tampa.quebrado = false;
+		pAzul.fabricante.nome = "Faber Castel";
+		pAzul.fabricante.setValor(5.00);
+		pAzul.fabricante.endereco.setEstado("RJ");
+		pAzul.fabricante.endereco.setCidade("Resende");
+		pAzul.fabricante.endereco.setLogradouro("sfapfokafpokafo");
+		pAzul.fabricante.endereco.setCep("235935982359892");
+		
+		Piloto pPreto = new Piloto();
+		pPreto.tampa = new Tampa();
+		pPreto.fabricante = new Fabricante();
+		pPreto.fabricante.endereco = new Endereco();
+		
+		pPreto.cor = "Preto";
+		pPreto.tamanhoPonta = 0.7;
+		pPreto.tipo = "Médio";
+		pPreto.tampa.formato = "Retangular";
+		pPreto.tampa.tamanhoTampa = "pequeno";
+		pPreto.tampa.quebrado = true;
+		pPreto.fabricante.nome = "Faber Castel";
+		pPreto.fabricante.setValor(6.00);
+		pPreto.fabricante.endereco.setEstado("SP");
+		pPreto.fabricante.endereco.setCidade("São Paulo");
+		pPreto.fabricante.endereco.setLogradouro("sfapfokafpokafo");
+		pPreto.fabricante.endereco.setCep("3578237587253");
+		
+		Piloto pVermelho = new Piloto();
+		pVermelho.tampa = new Tampa();
+		pVermelho.fabricante = new Fabricante();
+		pVermelho.fabricante.endereco = new Endereco();
+		
+		pVermelho.cor = "Vermelho";
+		pVermelho.tamanhoPonta = 0.5;
+		pVermelho.tipo = "Fino";
+		pVermelho.tampa.formato = "Retangular";
+		pVermelho.tampa.tamanhoTampa = "grande";
+		pVermelho.tampa.quebrado = false;
+		pVermelho.fabricante.nome = "Faber Castel";
+		pVermelho.fabricante.setValor(7.00);
+		pVermelho.fabricante.endereco.setEstado("PE");
+		pVermelho.fabricante.endereco.setCidade("Recife");
+		pVermelho.fabricante.endereco.setLogradouro("sfapfokafpokafo");
+		pVermelho.fabricante.endereco.setCep("2359359893582");
+		
+		
+		System.out.println("------------------------------------------------------------------");
+		pAzul.Status();
+		
+		System.out.println("------------------------------------------------------------------");
+		pPreto.Status();
+		
+		System.out.println("------------------------------------------------------------------");
+		pVermelho.Status();
+		
+		System.out.println("------------------------------------------------------------------");
+		
+	}
+  }
