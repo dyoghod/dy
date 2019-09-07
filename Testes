@@ -69,3 +69,107 @@ public class PrincipalPiloto {
 		
 	}
   }
+public class Piloto {
+	 public String cor;
+	 public String tipo;
+	 public double tamanhoPonta;
+	 public Tampa tampa;
+	 public Endereco endereco;
+	 public Fabricante fabricante;
+	
+	
+	 void Status() {
+		
+		System.out.println("cor: " +this.cor);
+		System.out.println("tipo: " +this.tipo);
+		System.out.println("tamanhoPonta: " +this.tamanhoPonta);
+		System.out.println("Formato tampa: " + this.tampa.formato);
+		System.out.println("tampa quebrada..." +this.tampa.quebrado + this.tampa.quebrado());
+		System.out.println("Fabricante: " + this.fabricante.nome);
+		System.out.println("Valor: " +this.fabricante.getValor());
+	    System.out.println("Estado de Fabricacão:  " +this.fabricante.endereco.getEstado());
+	    System.out.println("Cidade: " +this.fabricante.endereco.getCidade());
+	    System.out.println("CEP:" +this.fabricante.endereco.getCep());
+	    
+	    
+	 }
+}
+public class Tampa {
+	 String tamanhoTampa;
+	 String formato;
+	 boolean quebrado;
+	 Tampa tampa;
+	
+	 public String quebrado() {
+		    String quebrado;
+		    if(this.quebrado == false) {
+		        quebrado = " ---- Cuidado, tampa quebrada";
+		    } else {
+		        quebrado = " ---- A tampa não está quebrada";
+		    }
+		    
+		    return quebrado;
+	 
+			 
+	 }		 
+			 
+}
+	 public class Endereco {
+	private String logradouro;
+	private String cep;
+	private String estado;
+	private String cidade;
+	private Endereco endereco;
+	
+	
+	
+	
+	public String getLogradouro() {
+		return logradouro;
+	}
+	public void setLogradouro(String logradouro) {
+		this.logradouro = logradouro;
+	}
+	public String getCep() {
+		return cep;
+	}
+	public void setCep(String cep) {
+		this.cep = cep;
+	}
+	public String getEstado() {
+		return estado;
+	}
+	public void setEstado(String estado) {
+		this.estado = estado;
+	}
+	public String getCidade() {
+		return cidade;
+	}
+	public void setCidade(String cidade) {
+		this.cidade = cidade;
+	}
+	public Endereco getEndereco() {
+		return endereco;
+	}
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
+	}
+
+}
+public class Fabricante {
+	public String nome;
+	public Endereco endereco;
+	private double valor;
+	
+	
+	
+	
+	public double getValor() {
+		return valor;
+	}
+	public void setValor(double valor) {
+		this.valor = valor;
+	}
+	
+
+}
